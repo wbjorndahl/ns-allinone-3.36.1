@@ -1,0 +1,77 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C++ SOURCE FILE Test HAVE_UINT128_T failed with the following output:
+Change Dir: /Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1ffd7/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1ffd7.dir/build.make CMakeFiles/cmTC_1ffd7.dir/build
+Building CXX object CMakeFiles/cmTC_1ffd7.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_UINT128_T  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fPIE -std=gnu++17 -MD -MT CMakeFiles/cmTC_1ffd7.dir/src.cxx.o -MF CMakeFiles/cmTC_1ffd7.dir/src.cxx.o.d -o CMakeFiles/cmTC_1ffd7.dir/src.cxx.o -c /Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CMakeTmp/src.cxx
+/Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CMakeTmp/src.cxx:5:18: error: use of undeclared identifier 'uint128_t'
+            if ((uint128_t *) 0) return 0;
+                 ^
+/Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CMakeTmp/src.cxx:5:29: error: expected expression
+            if ((uint128_t *) 0) return 0;
+                            ^
+/Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CMakeTmp/src.cxx:6:25: error: use of undeclared identifier 'uint128_t'
+            if (sizeof (uint128_t)) return 0;
+                        ^
+3 errors generated.
+make[1]: *** [CMakeFiles/cmTC_1ffd7.dir/src.cxx.o] Error 1
+make: *** [cmTC_1ffd7/fast] Error 2
+
+
+Source file was:
+#include <stdint.h>
+       int main(int argc, char **argv)
+         {
+            (void)argc; (void)argv;
+            if ((uint128_t *) 0) return 0;
+            if (sizeof (uint128_t)) return 0;
+            return 1;
+         }
+Determining if the include file netpacket/packet.h exists failed with the following output:
+Change Dir: /Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_29348/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_29348.dir/build.make CMakeFiles/cmTC_29348.dir/build
+Building CXX object CMakeFiles/cmTC_29348.dir/CheckIncludeFile.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fPIE -std=gnu++17 -MD -MT CMakeFiles/cmTC_29348.dir/CheckIncludeFile.cxx.o -MF CMakeFiles/cmTC_29348.dir/CheckIncludeFile.cxx.o.d -o CMakeFiles/cmTC_29348.dir/CheckIncludeFile.cxx.o -c /Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: 'netpacket/packet.h' file not found
+#include <netpacket/packet.h>
+         ^~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_29348.dir/CheckIncludeFile.cxx.o] Error 1
+make: *** [cmTC_29348/fast] Error 2
+
+
+
+Determining if files boost/units/quantity.hpp;boost/units/systems/si.hpp exist failed with the following output:
+Change Dir: /Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_72420/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_72420.dir/build.make CMakeFiles/cmTC_72420.dir/build
+Building CXX object CMakeFiles/cmTC_72420.dir/HAVE_BOOST_UNITS.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fPIE -std=gnu++17 -MD -MT CMakeFiles/cmTC_72420.dir/HAVE_BOOST_UNITS.cpp.o -MF CMakeFiles/cmTC_72420.dir/HAVE_BOOST_UNITS.cpp.o.d -o CMakeFiles/cmTC_72420.dir/HAVE_BOOST_UNITS.cpp.o -c /Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CheckIncludeFiles/HAVE_BOOST_UNITS.cpp
+/Users/william/Documents/ns-allinone-3.36.1/ns-3.36.1/cmake-cache/CMakeFiles/CheckIncludeFiles/HAVE_BOOST_UNITS.cpp:2:10: fatal error: 'boost/units/quantity.hpp' file not found
+#include <boost/units/quantity.hpp>
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_72420.dir/HAVE_BOOST_UNITS.cpp.o] Error 1
+make: *** [cmTC_72420/fast] Error 2
+
+
+Source:
+/* */
+#include <boost/units/quantity.hpp>
+#include <boost/units/systems/si.hpp>
+
+
+int main(void){return 0;}
+
